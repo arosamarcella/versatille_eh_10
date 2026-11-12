@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guarda-Roupa Versatille</title>
+
+    <!-- Bootstrap primeiro, depois o seu CSS (assim o seu CSS pode sobrescrever o Bootstrap) -->
+    <link rel="stylesheet" href="css_js/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css_js/css/estilo_guardaRoupa.css">
+</head>
+
+<body>
+
+    <!-- Barra de navegação -->
+    <header>
+        <nav class="navbar navbar-expand-lg nav-versatille">
+            <div class="container-fluid px-4">
+
+                <a class="navbar-brand fs-2 fw-bold" href="index.html">VERSATILLE</a>
+
+                <!-- Botão que aparece no celular -->
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre_versatille.html">Sobre o Versatille</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="guarda-roupa.html">Guarda-Roupa</a>
+                        </li>
+                    </ul>
+
+                    <a class="btn btn-entrar" href="login.html" id="entrar">Entrar</a>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="container-xxl painel my-4 p-0">
+
+        <!-- Barra de ferramentas: abas, adicionar e busca -->
+        <div class="barra-ferramentas d-flex flex-wrap justify-content-between align-items-center gap-2 p-3">
+
+            <div class="d-flex flex-wrap gap-1">
+                <button class="btn aba ativa" type="button" data-filtro="tudo">Tudo</button>
+                <button class="btn aba" type="button" data-filtro="roupas">Roupas</button>
+                <button class="btn aba" type="button" data-filtro="acessorios">Acessórios</button>
+            </div>
+
+            <button
+                class="btn btn-adicionar"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#modalAdicionar">
+                + Adicionar Peças
+            </button>
+
+            <div class="input-group w-auto">
+                <input
+                    type="text"
+                    id="busca"
+                    class="form-control"
+                    placeholder="Buscar peça..."
+                >
+
+                <button
+                    class="btn btn-buscar"
+                    type="button"
+                    id="btn-buscar"
+                >
+                    🔍
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Área das peças (os cards são criados pelo JavaScript) -->
+        <section class="area-pecas p-3 p-md-4">
+            <div id="grid-pecas" class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3"></div>
+        </section>
+
+    </main>
+
+    <!-- ===== Modal de cadastro de peças ===== -->
+<div class="modal fade" id="modalAdicionar" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Adicionar nova peça</h5>
+                <button type="button" class="btn-close"
+                    data-bs-dismiss="modal"></button>
+            </div>
+
+            <form id="formPeca">
+
+                <div class="modal-body">
+
+                    <div class="mb-3">
+                        <label class="form-label">Foto da peça</label>
+                        <input type="file" class="form-control"
+                            id="fotoPeca" accept="image/*">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Nome</label>
+                        <input type="text" class="form-control"
+                            id="nomePeca" placeholder="Ex.: Vestido rosa"
+                            required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Categoria</label>
+                        <select class="form-select" id="categoriaPeca" required>
+                            <option value="">Selecione</option>
+                            <option value="Roupas">Roupas</option>
+                            <option value="Acessórios">Acessórios</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Tipo</label>
+                        <input type="text" class="form-control"
+                            id="tipoPeca" placeholder="Ex.: Vestido, Colar..."
+                            required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Cor</label>
+                        <input type="text" class="form-control"
+                            id="corPeca" placeholder="Ex.: Amarelo, vermelho...">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Tamanho</label>
+                        <input type="text" class="form-control"
+                            id="tamanhoPeca" placeholder="Ex.: P, M, G ou Único"
+                            required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Tecido ou material</label>
+                        <input type="text" class="form-control"
+                            id="materialPeca" placeholder="Ex.: Malha, couro..." required>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                        Cancelar
+                    </button>
+
+                    <button type="submit" class="btn btn-adicionar">
+                        Adicionar ao guarda-roupa
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <a href="index.html">
+            <h1 class="text-center pt-3">VERSATILLE</h1>
+        </a>
+        <img src="IMG/rodape2.png" alt="Rodapé Versatille">
+    </footer>
+
+    <!-- JS: primeiro o Bootstrap, depois o seu script -->
+    <script src="css_js/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="css_js/js/guardaRoupa.js"></script>
+
+</body>
+
+</html>

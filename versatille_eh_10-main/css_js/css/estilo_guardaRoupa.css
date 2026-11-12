@@ -1,0 +1,157 @@
+/* ===== Cores do site ===== */
+:root {
+    --rosa-nav: #AF2767;
+    --rosa-barra: #9f245b;
+    --rosa-escuro: #8c1d50;
+    --rosa-botoes: #f7d2e6;
+    --rosa-painel: #fce1f4;
+}
+
+body {
+    background-image: url("../../fundo_estrelado.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* ===== Barra de navegação ===== */
+.nav-versatille {
+    background-color: var(--rosa-nav);
+}
+
+.nav-versatille .navbar-brand,
+.nav-versatille .nav-link {
+    color: #fff;
+}
+
+.btn-entrar {
+    background-color: var(--rosa-botoes);
+    color: var(--rosa-escuro);
+    border-radius: 10px;
+}
+
+/* ===== Painel central ===== */
+.painel {
+    max-width: 1800px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.barra-ferramentas {
+    background-color: var(--rosa-barra);
+}
+
+.aba,
+.btn-adicionar {
+    background-color: var(--rosa-botoes);
+    color: var(--rosa-escuro);
+    font-weight: bold;
+    border: none;
+}
+
+.aba {
+    padding: 12px 30px;
+}
+
+.aba.ativa {
+    background-color: #a82e63;
+    color: #fff;
+}
+
+.btn-adicionar {
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.btn-buscar {
+    background-color: #5c1437;
+    color: #fff;
+}
+
+.area-pecas {
+    background-color: var(--rosa-painel);
+}
+
+/* ===== Card da peça ===== */
+.peca {
+    height: 190px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 2px solid var(--rosa-escuro);
+    border-radius: 12px;
+}
+
+.peca-favorito {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    font-size: 16px;
+    color: var(--rosa-escuro);
+    cursor: pointer;
+}
+
+.peca-img {
+    max-height: 110px;
+    max-width: 100%;
+    object-fit: contain;
+    margin-top: 10px;
+}
+
+.peca-rodape {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.peca-nome {
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--rosa-escuro);
+}
+
+/* ===== Botão "i" e tabela de informações ===== */
+.btn-info-peca {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    color: var(--rosa-escuro);
+    border: 1.5px solid var(--rosa-escuro);
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.info-peca {
+    min-width: 170px;
+    font-size: 11px;
+    border: 1.5px solid var(--rosa-escuro);
+}
+
+.info-peca th {
+    color: var(--rosa-escuro);
+}
+
+/* ===== Rodapé ===== */
+.rodape {
+    background-color: var(--rosa-nav);
+    margin-top: 20vh;
+}
+
+.rodape a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.rodape img {
+    width: 100%;
+}
