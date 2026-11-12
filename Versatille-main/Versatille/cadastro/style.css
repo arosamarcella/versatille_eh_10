@@ -1,0 +1,181 @@
+/* Configurações Globais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Instrument Serif', serif;
+}
+
+/* Barra de Navegação */
+.navbar-versatille {
+    background-color: #AF2767;
+    height: 5vh;
+    color: #fff;
+    padding: 1vh;
+}
+
+.nav-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    transform: translateY(-15px);
+}
+
+.nav-brand {
+    text-decoration: none;
+    color: #ffff;
+    margin-left: 50px;
+}
+
+.nav-brand h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.nav-link-custom {
+    text-decoration: none;
+    color: #ffff;
+    margin-left: 50px;
+}
+
+.btn-entrar {
+    border-radius: 10px;
+    background-color: #FFD8D3;
+    max-width: 15vh;
+    padding: 0.5vh;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+/* Container do Cadastro */
+.cadastro-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Indicador de Etapas */
+.step-indicator {
+    display: flex;
+    justify-content: space-between;
+    background-color: #AF2767;
+    padding: 15px 30px;
+    border-radius: 30px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.step-item {
+    text-align: center;
+    font-size: 13px;
+    position: relative;
+}
+
+.step-item span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.step-circle {
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.step-dot {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* Formulário */
+.form-group-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.input-group-custom {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group-custom label {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.custom-input {
+    padding: 12px 15px;
+    background-color: #f3ebed;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #666;
+    outline: none;
+}
+
+/* Ações do Formulário */
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 50px;
+    border-top: 1px solid #ddd;
+    padding-top: 25px;
+}
+
+.btn-prosseguir {
+    background-color: #AF2767;
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Rodapé */
+.footer-versatille {
+    background-color: #AF2767;
+    margin-top: 20vh;
+    height: 35vh;
+}
+
+.footer-brand {
+    text-decoration: none;
+    color: #ffff;
+    margin-left: 50px;
+    display: block;
+    padding-top: 2vh;
+}
+
+.footer-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.footer-img {
+    width: 100%;
+    max-height: 50%;
+}
