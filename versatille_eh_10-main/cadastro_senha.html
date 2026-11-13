@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Versatille - Email e Senha</title>
+    <title>Home Versatille</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,94 +14,118 @@
     <!-- Ícones Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <!-- BOOTSTRAP LOCAL (Mesmo caminho do cadastro_dados.html) -->
+    <!-- BOOTSTRAP LOCAL -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 
     <!-- SEU CSS LOCAL -->
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body style="margin: 0; padding: 0;">
 
     <!-- Barra de navegação -->
     <header>
-        <nav class="navbar-versatille">
-            <div class="nav-grid">
-                <a class="nav-brand" href="index.html">
-                    <h1>VERSATILLE</h1>
+        <nav class="navbar-versatille" style="background-color: #AF2767; height: 5vh; color: #fff; padding: 1vh;">
+            <div class="nav-grid" style="display: grid; grid-template-columns: auto auto auto auto; align-items: center; transform: translateY(-15px);">
+
+                <!-- Links de navegação -->
+                <a class="nav-brand" style="text-decoration: none; color: #ffff; margin-left: 50px;" href="#">
+                    <h1>VERSATILLE</h1> <!-- Logo da nav -->
                 </a>
 
-                <a class="nav-link-custom" href="sobre_versatille.html">Sobre o Versatille</a>
+                <a class="nav-link-custom" style="text-decoration: none; color: #ffff; margin-left: 50px;" href="sobre_versatille.html">Sobre o Versatille</a>
 
-                <a class="nav-link-custom" href="guarda-roupa.html">Guarda-Roupa</a>
+                <a class="nav-link-custom" style="text-decoration: none; color: #ffff; margin-left: 50px;" href="guarda-roupa.html">Guarda-Roupa</a>
 
-                <a href="login.html" id="entrar" class="btn-entrar">Entrar</a>
+                <!-- Botão de entrar -->
+                <a class="btn btn-entrar" style="border-radius: 10px; background-color: #FFD8D3; max-width: 15vh; padding: 0.5vh; text-align: center; color: black; text-decoration: none; border: none;" href="login.html" id="entrar">Entrar</a>
+
             </div>
         </nav>
     </header>
 
     <!-- Conteúdo do Cadastro - Email e Senha -->
-    <div class="cadastro-container">
+    <div class="cadastro-container" style="width: 100%; max-width: 900px; margin: 40px auto; background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+
         <!-- Indicador de Etapas -->
-        <div class="step-indicator">
-            <div class="step-item">
-                <span>Seus Dados</span>
-                <div class="step-circle"></div>
+        <div class="step-indicator" style="display: flex; justify-content: space-between; background-color: #AF2767; padding: 15px 30px; border-radius: 30px; margin-bottom: 40px; color: white;">
+
+            <div class="step-item" style="text-align: center; font-size: 13px; position: relative;">
+                <span style="display: block; margin-bottom: 5px;">Seus Dados</span>
+                <div class="step-circle" style="width: 20px; height: 20px; border: 2px solid white; border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center;"></div>
             </div>
-            <div class="step-item">
-                <span>Email e Senha</span>
-                <div class="step-circle active-circle">
-                    <div class="step-dot"></div>
+
+            <div class="step-item" style="text-align: center; font-size: 13px; position: relative;">
+                <span style="display: block; margin-bottom: 5px;">Email e Senha</span>
+                <div class="step-circle active-circle" style="width: 20px; height: 20px; border: 2px solid white; border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center; position: relative;">
+                    <div class="step-dot" style="width: 10px; height: 10px; background-color: white; border-radius: 50%;"></div>
                 </div>
             </div>
-            <div class="step-item">
-                <span>Escolher Foto</span>
-                <div class="step-circle"></div>
+
+            <div class="step-item" style="text-align: center; font-size: 13px; position: relative;">
+                <span style="display: block; margin-bottom: 5px;">Escolher Foto</span>
+                <div class="step-circle" style="width: 20px; height: 20px; border: 2px solid white; border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center;"></div>
             </div>
-            <div class="step-item">
-                <span>Concluido!</span>
-                <div class="step-circle"></div>
+
+            <div class="step-item" style="text-align: center; font-size: 13px; position: relative;">
+                <span style="display: block; margin-bottom: 5px;">Concluído!</span>
+                <div class="step-circle" style="width: 20px; height: 20px; border: 2px solid white; border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center;"></div>
             </div>
+
         </div>
 
-        <!-- Formulário com as mesmas classes do cadastro_dados.html -->
+        <!-- Formulário de Email e Senha apontando para cadastro_foto.html -->
         <form action="cadastro_foto.html" method="GET">
-            <div class="form-group-container">
-                <div class="input-group-custom">
-                    <label>Email</label>
-                    <input type="email" placeholder="Insira seu email" required class="custom-input">
+
+            <div class="form-group-container" style="display: flex; flex-direction: column; gap: 20px; max-width: 500px; margin: 0 auto;">
+
+                <div class="input-group-custom" style="display: flex; flex-direction: column;">
+                    <label for="email" class="form-label" style="font-size: 14px; color: #444; margin-bottom: 8px;">Email</label>
+                    <input type="email" id="email" placeholder="insira seu email" required class="form-control custom-input" style="padding: 12px 15px; background-color: #f3ebed; border: none; border-radius: 6px; font-size: 14px; color: #666; outline: none;">
                 </div>
-                <div class="input-group-custom">
-                    <label>Senha</label>
-                    <input type="password" placeholder="Digite sua senha" required class="custom-input">
+
+                <div class="input-group-custom" style="display: flex; flex-direction: column;">
+                    <label for="senha" class="form-label" style="font-size: 14px; color: #444; margin-bottom: 8px;">Senha</label>
+                    <input type="password" id="senha" placeholder="Digite Senha" required class="form-control custom-input" style="padding: 12px 15px; background-color: #f3ebed; border: none; border-radius: 6px; font-size: 14px; color: #666; outline: none;">
                 </div>
-                <div class="input-group-custom">
-                    <label>Confirmar Senha</label>
-                    <input type="password" placeholder="Confirme sua senha" required class="custom-input">
+
+                <div class="input-group-custom" style="display: flex; flex-direction: column;">
+                    <label for="confirmarSenha" class="form-label" style="font-size: 14px; color: #444; margin-bottom: 8px;">Confirmar Senha</label>
+                    <input type="password" id="confirmarSenha" placeholder="Confirmar Senha" required class="form-control custom-input" style="padding: 12px 15px; background-color: #f3ebed; border: none; border-radius: 6px; font-size: 14px; color: #666; outline: none;">
                 </div>
+
             </div>
 
             <!-- Botões de Ação -->
-            <div class="form-actions-between">
-                <a href="cadastro_dados.html" class="btn-voltar">&#171; Volta</a>
-                <button type="submit" class="btn-prosseguir">Prosseguir</button>
+            <div class="form-actions-between" style="display: flex; justify-content: space-between; align-items: center; margin-top: 50px; border-top: 1px solid #ddd; padding-top: 25px;">
+
+                <a href="cadastro_dados.html" class="btn btn-voltar" style="background: none; border: none; color: #333; font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px; font-weight: 500; text-decoration: none;">&#171; Volta</a>
+
+                <button type="submit" class="btn btn-prosseguir" style="background-color: #AF2767; color: white; border: none; padding: 12px 35px; border-radius: 6px; font-size: 15px; cursor: pointer; font-weight: 500;">Prosseguir</button>
+
             </div>
+
         </form>
+
     </div>
 
     <!-- Rodapé -->
-    <footer class="footer-versatille">
-        <a class="footer-brand" href="index.html">
-            <h1 class="text-center">VERSATILLE</h1>
+    <footer class="footer-versatille" style="background-color: #AF2767; margin-top: 20vh; height: 35vh;">
+
+        <!-- Links de navegação -->
+        <a class="footer-brand" style="text-decoration: none; color: #ffff; margin-left: 50px;" href="index.html">
+            <h1 align="center">VERSATILLE</h1> <!-- Logo da nav -->
         </a>
 
-        <div class="footer-img-container">
-            <img src="IMG/rodape2.png" alt="Rodapé Versatille" class="footer-img">
+        <!-- Adicionando imagem do footer rodape.jpg -->
+        <div class="footer-img-container" style="display: flex; justify-content: center; align-items: center; margin-top: 5vh;">
+            <img src="IMG/rodape2.png" class="footer-img" style="width: 100%; max-height: 50%;">
         </div>
+
     </footer>
 
     <!-- Bootstrap JS LOCAL -->
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-</body>
 
+</body>
 </html>
