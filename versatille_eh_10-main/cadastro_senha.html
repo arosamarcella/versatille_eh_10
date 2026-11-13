@@ -14,8 +14,8 @@
     <!-- Ícones Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <!-- BOOTSTRAP LOCAL -->
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <!-- BOOTSTRAP LOCAL (Mesmo caminho do cadastro_dados.html) -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 
     <!-- SEU CSS LOCAL -->
     <link rel="stylesheet" href="style.css">
@@ -27,7 +27,6 @@
     <header>
         <nav class="navbar-versatille">
             <div class="nav-grid">
-                <!-- Links de navegação -->
                 <a class="nav-brand" href="index.html">
                     <h1>VERSATILLE</h1>
                 </a>
@@ -36,7 +35,6 @@
 
                 <a class="nav-link-custom" href="guarda-roupa.html">Guarda-Roupa</a>
 
-                <!-- Botão de entrar -->
                 <a href="login.html" id="entrar" class="btn-entrar">Entrar</a>
             </div>
         </nav>
@@ -61,12 +59,12 @@
                 <div class="step-circle"></div>
             </div>
             <div class="step-item">
-                <span>Concluído!</span>
+                <span>Concluido!</span>
                 <div class="step-circle"></div>
             </div>
         </div>
 
-        <!-- Formulário de Email e Senha apontando para cadastro_foto.html -->
+        <!-- Formulário com as mesmas classes do cadastro_dados.html -->
         <form action="cadastro_foto.html" method="GET">
             <div class="form-group-container">
                 <div class="input-group-custom">
@@ -75,15 +73,15 @@
                 </div>
                 <div class="input-group-custom">
                     <label>Senha</label>
-                    <input type="password" placeholder="Digite Senha" required class="custom-input">
+                    <input type="password" placeholder="Digite sua senha" required class="custom-input">
                 </div>
                 <div class="input-group-custom">
                     <label>Confirmar Senha</label>
-                    <input type="password" placeholder="Confirmar Senha" required class="custom-input">
+                    <input type="password" placeholder="Confirme sua senha" required class="custom-input">
                 </div>
             </div>
 
-            <!-- Botões de Ação (Voltar e Prosseguir) -->
+            <!-- Botões de Ação -->
             <div class="form-actions-between">
                 <a href="cadastro_dados.html" class="btn-voltar">&#171; Volta</a>
                 <button type="submit" class="btn-prosseguir">Prosseguir</button>
@@ -97,14 +95,13 @@
             <h1 class="text-center">VERSATILLE</h1>
         </a>
 
-        <!-- Imagem do Rodapé -->
         <div class="footer-img-container">
             <img src="IMG/rodape2.png" alt="Rodapé Versatille" class="footer-img">
         </div>
     </footer>
 
     <!-- Bootstrap JS LOCAL -->
-    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
