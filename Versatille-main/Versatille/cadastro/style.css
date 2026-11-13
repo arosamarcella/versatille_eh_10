@@ -2,7 +2,6 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Instrument Serif', serif;
 }
 
 /* Barra de Navegação */
@@ -27,8 +26,8 @@ body {
 }
 
 .nav-brand h1 {
-    font-size: 2rem;
     margin: 0;
+    font-size: 2rem;
 }
 
 .nav-link-custom {
@@ -47,7 +46,7 @@ body {
     text-decoration: none;
 }
 
-/* Container do Cadastro */
+/* Conteúdo do Cadastro */
 .cadastro-container {
     width: 100%;
     max-width: 900px;
@@ -55,7 +54,7 @@ body {
     background: white;
     padding: 40px;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
 /* Indicador de Etapas */
@@ -92,7 +91,7 @@ body {
     position: relative;
 }
 
-.step-dot {
+.active-circle .step-dot {
     width: 10px;
     height: 10px;
     background-color: white;

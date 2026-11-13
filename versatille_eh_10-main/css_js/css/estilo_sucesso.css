@@ -1,0 +1,16 @@
+/* Caixa de Sucesso / Concluído */
+.success-message-box {
+    background-color: #f3ebed;
+    color: #AF2767;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 40px auto;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.form-actions-center {
+    margin-top: 30px;
+}

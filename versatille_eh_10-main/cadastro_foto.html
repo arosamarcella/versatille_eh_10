@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Versatille - Escolher Foto</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Sirivennela:ital,wght@0,400&family=Special+Elite&display=swap" rel="stylesheet">
+
+    <!-- Ícones Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- BOOTSTRAP LOCAL -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+    <!-- SEU CSS LOCAL -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Barra de navegação -->
+    <header>
+        <nav class="navbar-versatille">
+            <div class="nav-grid">
+                <!-- Links de navegação -->
+                <a class="nav-brand" href="index.html">
+                    <h1>VERSATILLE</h1>
+                </a>
+
+                <a class="nav-link-custom" href="sobre_versatille.html">Sobre o Versatille</a>
+
+                <a class="nav-link-custom" href="guarda-roupa.html">Guarda-Roupa</a>
+
+                <!-- Botão de entrar -->
+                <a href="login.html" id="entrar" class="btn-entrar">Entrar</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo - Escolher Foto -->
+    <div class="cadastro-container">
+        <!-- Indicador de Etapas -->
+        <div class="step-indicator">
+            <div class="step-item">
+                <span>Seus Dados</span>
+                <div class="step-circle"></div>
+            </div>
+            <div class="step-item">
+                <span>Email e Senha</span>
+                <div class="step-circle"></div>
+            </div>
+            <div class="step-item">
+                <span>Escolher Foto</span>
+                <div class="step-circle active-circle">
+                    <div class="step-dot"></div>
+                </div>
+            </div>
+            <div class="step-item">
+                <span>Concluído!</span>
+                <div class="step-circle"></div>
+            </div>
+        </div>
+
+        <!-- Área de Escolha de Foto -->
+        <div class="photo-upload-section">
+            <div class="photo-circle-preview">
+                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+            </div>
+            <span class="photo-label">Escolher foto</span>
+
+            <div class="photo-icons">
+                <span>📷</span>
+                <span>📁</span>
+            </div>
+            <a href="sucesso.html" class="skip-link">Pular</a>
+        </div>
+
+        <!-- Botões de Ação -->
+        <div class="form-actions-between">
+            <a href="cadastro_senha.html" class="btn-voltar">&#171; Volta</a>
+            <a href="sucesso.html" class="btn-prosseguir">ENTRAR</a>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="footer-versatille">
+        <a class="footer-brand" href="index.html">
+            <h1 class="text-center">VERSATILLE</h1>
+        </a>
+
+        <!-- Imagem do Rodapé -->
+        <div class="footer-img-container">
+            <img src="IMG/rodape2.png" alt="Rodapé Versatille" class="footer-img">
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS LOCAL -->
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
