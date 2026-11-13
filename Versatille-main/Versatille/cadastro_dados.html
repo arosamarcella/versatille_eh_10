@@ -1,142 +1,126 @@
 <!DOCTYPE html>
-<html lang="pt-bt">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Versatille</title>
+    <title>Cadastro - Versatille</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Sirivennela:ital,wght@0,400&family=Special+Elite&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Sirivennela:ital,wght@0,400&family=Special+Elite&display=swap" rel="stylesheet">
 
-    <!--ìcones-->
+    <!-- Ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
+    <!-- Bootstrap LOCAL -->
+    <link rel="stylesheet" href="css_js/bootstrap/css/bootstrap.css">
 </head>
 
-<body style="   margin: 0;
-                padding: 0;">
+<body style="margin: 0; padding: 0;">
 
-    <!--Barra de navegação-->
+    <!-- ========== NAVBAR ========== -->
     <header>
-        <nav style="    background-color: #AF2767;
-        height: 5vh;
-        color: #fff;
-        padding: 1vh;">
+        <nav class="navbar navbar-expand" style="background-color: #AF2767; height: 5vh; color: #fff; padding: 1vh;">
+            <div class="container-fluid" style="display: grid; grid-template-columns: auto auto auto auto; align-items: center; transform: translateY(-15px);">
 
-
-
-            <div style="    display: grid;
-            grid-template-columns: auto auto auto auto;
-            align-items: center;
-            transform: translateY(-15px);" >
-
-                <!--Links de navegação-->
-                <a style="    text-decoration: none;
-                color: #ffff;
-                margin-left: 50px;" href="index.html">
-                    <h1>VERSATILLE</h1> <!--Logo da nav-->
+                <a class="navbar-brand" style="text-decoration: none; color: #ffff; margin-left: 50px;" href="index.html">
+                    <h1 class="m-0">VERSATILLE</h1>
                 </a>
 
-                <a style="    text-decoration: none;
-                color: #ffff;
-                margin-left: 50px;" href="sobre_versatille.html">Sobre o Versatille</a>
+                <a class="nav-link" style="text-decoration: none; color: #ffff; margin-left: 50px;" href="sobre_versatille.html">Sobre o Versatille</a>
 
-                <a style="    text-decoration: none;
-                color: #ffff;
-                margin-left: 50px;" href="guarda-roupa.html">Guarda-Roupa</a>
+                <a class="nav-link" style="text-decoration: none; color: #ffff; margin-left: 50px;" href="guarda-roupa.html">Guarda-Roupa</a>
 
-
-                <!--Botão de entrar-->
-                <a style="       border-radius: 10px;
-                background-color: #FFD8D3;
-                max-width: 15vh;
-                padding: 0.5vh;
-                text-align: center;
-                color: black; text-decoration: none;" href="login.html" id="entrar">Entrar</a>
-
-
+                <a class="btn" style="border-radius: 10px; background-color: #FFD8D3; max-width: 15vh; padding: 0.5vh; text-align: center; color: black; text-decoration: none; border: none;" href="login.html" id="entrar">Entrar</a>
 
             </div>
-
         </nav>
     </header>
 
-<!-- Conteúdo do Cadastro - Seus Dados -->
-<div style="width: 100%; max-width: 900px; margin: 40px auto; background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-<!-- Indicador de Etapas -->
-<div style="display: flex; justify-content: space-between; background-color: #AF2767; padding: 15px 30px; border-radius: 30px; margin-bottom: 40px; color: white;">
-<div style="text-align: center; font-size: 13px; position: relative;">
-<span style="display: block; margin-bottom: 5px;">Seus Dados</span>
-<div style="width: 20px; height: 20px; border: 2px solid white; border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center; position: relative;">
-<div style="width: 10px; height: 10px; background-color: white; border-radius: 50%;"></div>
-</div>
-</div>
-<div style="text-align: center; font-size: 13px; position: relative;">
-<span style="display: block; margin-bottom: 5px;">Email e Senha</span>
-<div style="width: 20px; height: 20px; border: 2px solid white; border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center;"></div>
-</div>
-<div style="text-align: center; font-size: 13px; position: relative;">
-<span style="display: block; margin-bottom: 5px;">Escolher Foto</span>
-<div style="width: 20px; height: 20px; border: 2px solid white; border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center;"></div>
-</div>
-<div style="text-align: center; font-size: 13px; position: relative;">
-<span style="display: block; margin-bottom: 5px;">Concluido!</span>
-<div style="width: 20px; height: 20px; border: 2px solid white; border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center;"></div>
-</div>
-</div>
+    <!-- ========== CONTEÚDO DO CADASTRO - SEUS DADOS ========== -->
+    <div class="container" style="max-width: 900px; margin: 40px auto;">
 
-<!-- Formulário de Dados -->
-<form action="cadastro_senha.html" method="GET">
-<div style="display: flex; flex-direction: column; gap: 20px; max-width: 500px; margin: 0 auto;">
-<div style="display: flex; flex-direction: column;">
-<label style="font-size: 14px; color: #444; margin-bottom: 8px;">Nome Completo</label>
-<input type="text" placeholder="Insira seu nome completo" required style="padding: 12px 15px; background-color: #f3ebed; border: none; border-radius: 6px; font-size: 14px; color: #666; outline: none;">
-</div>
-<div style="display: flex; flex-direction: column;">
-<label style="font-size: 14px; color: #444; margin-bottom: 8px;">Telefone</label>
-<input type="tel" placeholder="(00) 00000-0000" required style="padding: 12px 15px; background-color: #f3ebed; border: none; border-radius: 6px; font-size: 14px; color: #666; outline: none;">
-</div>
-<div style="display: flex; flex-direction: column;">
-<label style="font-size: 14px; color: #444; margin-bottom: 8px;">Data de Nascimento</label>
-<input type="date" required style="padding: 12px 15px; background-color: #f3ebed; border: none; border-radius: 6px; font-size: 14px; color: #666; outline: none;">
-</div>
-</div>
+        <div class="card shadow-sm" style="border: none; border-radius: 8px;">
+            <div class="card-body" style="padding: 40px;">
 
-<!-- Botões de Ação -->
-<div style="display: flex; justify-content: flex-end; align-items: center; margin-top: 50px; border-top: 1px solid #ddd; padding-top: 25px;">
-<button type="submit" style="background-color: #AF2767; color: white; border: none; padding: 12px 35px; border-radius: 6px; font-size: 15px; cursor: pointer; font-weight: 500; text-decoration: none; display: inline-block; text-align: center;">Prosseguir</button>
-</div>
-</form>
-</div>
+                <!-- Indicador de Etapas -->
+                <div class="d-flex justify-content-between" style="background-color: #AF2767; padding: 15px 30px; border-radius: 30px; margin-bottom: 40px; color: white;">
 
-    <!--Rodapé-->
-    <footer style="    background-color: #AF2767;
-                        margin-top: 20vh;
-                        height: 35vh;">
+                    <div class="text-center" style="font-size: 13px; position: relative;">
+                        <span class="d-block mb-1">Seus Dados</span>
+                        <div style="width: 20px; height: 20px; border: 2px solid white; border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center; position: relative;">
+                            <div style="width: 10px; height: 10px; background-color: white; border-radius: 50%;"></div>
+                        </div>
+                    </div>
 
-                <!--Links de navegação-->
-                    <a style="    text-decoration: none;
-                    color: #ffff;
-                    margin-left: 50px;" href="index.html">
-                    <h1 align="center">VERSATILLE</h1> <!--Logo da nav-->
-                </a>
+                    <div class="text-center" style="font-size: 13px; position: relative;">
+                        <span class="d-block mb-1">Email e Senha</span>
+                        <div style="width: 20px; height: 20px; border: 2px solid white; border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center;"></div>
+                    </div>
 
-        <!--Adicionando imagem do footer rodape.jpg -->
-        <div style="    display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        margin-top: 5vh;">
-            <img src="IMG/rodape2.png" style="    width: 100%;
-                                                    max-height: 50%;">
-                
+                    <div class="text-center" style="font-size: 13px; position: relative;">
+                        <span class="d-block mb-1">Escolher Foto</span>
+                        <div style="width: 20px; height: 20px; border: 2px solid white; border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center;"></div>
+                    </div>
+
+                    <div class="text-center" style="font-size: 13px; position: relative;">
+                        <span class="d-block mb-1">Concluído!</span>
+                        <div style="width: 20px; height: 20px; border: 2px solid white; border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center;"></div>
+                    </div>
+
+                </div>
+
+                <!-- Formulário de Dados -->
+                <form action="cadastro_senha.html" method="GET">
+
+                    <div class="mx-auto" style="max-width: 500px;">
+
+                        <div class="mb-3">
+                            <label for="nome" class="form-label" style="font-size: 14px; color: #444; margin-bottom: 8px;">Nome Completo</label>
+                            <input type="text" id="nome" name="nome" placeholder="Insira seu nome completo" required class="form-control" style="padding: 12px 15px; background-color: #f3ebed; border: none; border-radius: 6px; font-size: 14px; color: #666;">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="telefone" class="form-label" style="font-size: 14px; color: #444; margin-bottom: 8px;">Telefone</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required class="form-control" style="padding: 12px 15px; background-color: #f3ebed; border: none; border-radius: 6px; font-size: 14px; color: #666;">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="data_nascimento" class="form-label" style="font-size: 14px; color: #444; margin-bottom: 8px;">Data de Nascimento</label>
+                            <input type="date" id="data_nascimento" name="data_nascimento" required class="form-control" style="padding: 12px 15px; background-color: #f3ebed; border: none; border-radius: 6px; font-size: 14px; color: #666;">
+                        </div>
+
+                    </div>
+
+                    <!-- Botões de Ação -->
+                    <div class="d-flex justify-content-end align-items-center" style="margin-top: 50px; border-top: 1px solid #ddd; padding-top: 25px;">
+                        <button type="submit" class="btn" style="background-color: #AF2767; color: white; border: none; padding: 12px 35px; border-radius: 6px; font-size: 15px; cursor: pointer; font-weight: 500;">Prosseguir</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ========== RODAPÉ ========== -->
+    <footer style="background-color: #AF2767; margin-top: 20vh; height: 35vh;">
+
+        <a style="text-decoration: none; color: #ffff; margin-left: 50px;" href="index.html">
+            <h1 class="text-center">VERSATILLE</h1>
+        </a>
+
+        <div class="d-flex justify-content-center align-items-center" style="margin-top: 5vh;">
+            <img src="IMG/rodape2.png" class="img-fluid" style="width: 100%; max-height: 50%;">
+        </div>
 
     </footer>
 
+    <!-- Bootstrap JS LOCAL -->
+    <script src="css_js/bootstrap/js/bootstrap.bundle.js"></script>
+
 </body>
 </html>
-
